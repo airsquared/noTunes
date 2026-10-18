@@ -11,10 +11,11 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    private static let appDelegate = AppDelegate()
+
     static func main() {
         let application = NSApplication.shared
-        let delegate = AppDelegate()
-        application.delegate = delegate
+        application.delegate = appDelegate
         application.run()
     }
 
