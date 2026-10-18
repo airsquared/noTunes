@@ -8,8 +8,15 @@
 
 import Cocoa
 
-@NSApplicationMain
+@main
 class AppDelegate: NSObject, NSApplicationDelegate {
+
+    static func main() {
+        let application = NSApplication.shared
+        let delegate = AppDelegate()
+        application.delegate = delegate
+        application.run()
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         appIsLaunched()
