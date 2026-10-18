@@ -18,16 +18,6 @@
 		E29B3C791E1D97CF00CB67E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		E29B3C6C1E1D97CF00CB67E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		E29B3C661E1D97CF00CB67E3 = {
 			isa = PBXGroup;
@@ -63,7 +53,6 @@
 			buildConfigurationList = E29B3C7C1E1D97CF00CB67E3 /* Build configuration list for PBXNativeTarget "noTunes" */;
 			buildPhases = (
 				E29B3C6B1E1D97CF00CB67E3 /* Sources */,
-				E29B3C6C1E1D97CF00CB67E3 /* Frameworks */,
 				E29B3C6D1E1D97CF00CB67E3 /* Resources */,
 			);
 			buildRules = (
@@ -258,16 +247,11 @@
 				DEVELOPMENT_TEAM = JP6WW46Y42;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = noTunes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = digital.twisted.noTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -283,16 +267,11 @@
 				DEVELOPMENT_TEAM = JP6WW46Y42;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = noTunes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = digital.twisted.noTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

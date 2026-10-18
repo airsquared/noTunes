@@ -5,7 +5,7 @@
 
 # noTunes
 
-noTunes is a macOS background application that prevents Apple Music or iTunes from launching.
+noTunes is a macOS background application that prevents Apple Music from launching.
 
 ## Installation
 
@@ -21,7 +21,7 @@ brew install --cask notunes
 
 ## Usage
 
-Launch noTunes to keep it running in the background. Music or iTunes will be closed if already running or whenever either app attempts to launch.
+Launch noTunes to keep it running in the background. Apple Music will be closed whenever it attempts to launch.
 
 ### Set noTunes to launch at startup
 
@@ -35,14 +35,6 @@ Launch noTunes to keep it running in the background. Music or iTunes will be clo
 #### Before Ventura:
 
 Navigate to System Preferences -> Users & Groups. Under your user, select "Login Items", click the lock on the bottom left and enter your login password to make changes. Click the plus sign (+) in the main panel and search for noTunes. Select it and click "Add".
-
-### Quit noTunes
-
-Quit the app from Terminal:
-
-```bash
-osascript -e 'quit app "noTunes"'
-```
 
 ## Support
 
