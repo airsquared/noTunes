@@ -8,27 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E29B3C731E1D97CF00CB67E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B3C721E1D97CF00CB67E3 /* AppDelegate.swift */; };
-		E29B3C751E1D97CF00CB67E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29B3C741E1D97CF00CB67E3 /* Assets.xcassets */; };
-		E29B3C781E1D97CF00CB67E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29B3C761E1D97CF00CB67E3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E237C9DE1E27C8D20006F607 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E29B3C6F1E1D97CF00CB67E3 /* noTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29B3C721E1D97CF00CB67E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E29B3C741E1D97CF00CB67E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E29B3C771E1D97CF00CB67E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E29B3C791E1D97CF00CB67E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				E29B3C721E1D97CF00CB67E3 /* AppDelegate.swift */,
-				E29B3C741E1D97CF00CB67E3 /* Assets.xcassets */,
-				E29B3C761E1D97CF00CB67E3 /* MainMenu.xib */,
 				E29B3C791E1D97CF00CB67E3 /* Info.plist */,
 			);
 			path = noTunes;
@@ -79,8 +61,6 @@
 			buildPhases = (
 				E29B3C6B1E1D97CF00CB67E3 /* Sources */,
 				E29B3C6C1E1D97CF00CB67E3 /* Frameworks */,
-				E29B3C6D1E1D97CF00CB67E3 /* Resources */,
-				E237C9DE1E27C8D20006F607 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -128,18 +108,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		E29B3C6D1E1D97CF00CB67E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E29B3C751E1D97CF00CB67E3 /* Assets.xcassets in Resources */,
-				E29B3C781E1D97CF00CB67E3 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E29B3C6B1E1D97CF00CB67E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,17 +118,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E29B3C761E1D97CF00CB67E3 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E29B3C771E1D97CF00CB67E3 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E29B3C7A1E1D97CF00CB67E3 /* Debug */ = {
@@ -279,7 +236,6 @@
 		E29B3C7D1E1D97CF00CB67E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -304,7 +260,6 @@
 		E29B3C7E1E1D97CF00CB67E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
