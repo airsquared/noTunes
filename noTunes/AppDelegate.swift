@@ -11,8 +11,6 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let defaults = UserDefaults.standard
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         appIsLaunched()
         createListener()
@@ -44,18 +42,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         app.forceTerminate()
-        launchReplacement()
-    }
-
-    func launchReplacement() {
-        guard let replacement = defaults.string(forKey: "replacement") else {
-            return
-        }
-
-        let task = Process()
-        task.arguments = [replacement]
-        task.launchPath = "/usr/bin/open"
-        task.launch()
     }
 
 }

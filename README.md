@@ -5,7 +5,7 @@
 
 # noTunes
 
-noTunes is a macOS background application that prevents Apple Music or iTunes from launching. If a replacement is configured, noTunes opens it instead.
+noTunes is a macOS background application that prevents Apple Music or iTunes from launching.
 
 ## Installation
 
@@ -35,28 +35,6 @@ Launch noTunes to keep it running in the background. Music or iTunes will be clo
 #### Before Ventura:
 
 Navigate to System Preferences -> Users & Groups. Under your user, select "Login Items", click the lock on the bottom left and enter your login password to make changes. Click the plus sign (+) in the main panel and search for noTunes. Select it and click "Add".
-
-### Set a replacement for iTunes / Apple Music
-
-Replace `YOUR_MUSIC_APP` with the name of your music app in the following command.
-
-```bash
-defaults write digital.twisted.noTunes replacement /Applications/YOUR_MUSIC_APP.app
-```
-
-Then `/Applications/YOUR_MUSIC_APP.app` will launch when iTunes/Music attempts to launch.
-
-This can be used to open a website too, for example, YouTube Music.
-
-```bash
-defaults write digital.twisted.noTunes replacement https://music.youtube.com/
-```
-
-The following command will disable the replacement.
-
-```bash
-defaults delete digital.twisted.noTunes replacement
-```
 
 ### Quit noTunes
 
