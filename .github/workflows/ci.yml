@@ -15,7 +15,7 @@ jobs:
     outputs:
       short_sha: ${{ steps.vars.outputs.short_sha }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Get short commit id
         id: vars
@@ -36,7 +36,7 @@ jobs:
           hdiutil create -volname noTunes -srcfolder dmg-root -ov -format UDZO \
             "noTunes-${{ steps.vars.outputs.short_sha }}.dmg"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: noTunes-dmg
           path: noTunes-*.dmg
@@ -48,7 +48,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: noTunes-dmg
 

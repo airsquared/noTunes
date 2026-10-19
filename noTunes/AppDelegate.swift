@@ -3,7 +3,7 @@ import AppKit
 @main
 struct NoTunes {
     static func main() {
-        // 1. Listen for future launches directly on the main RunLoop
+        // Listen for Apple Music launches and terminate it immediately
         NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.willLaunchApplicationNotification,
             object: nil,
@@ -15,7 +15,7 @@ struct NoTunes {
             }
         }
 
-        // 2. Park the main thread's RunLoop forever (0% CPU until notification arrives)
+        // Park the main thread's RunLoop
         RunLoop.main.run()
     }
 }
